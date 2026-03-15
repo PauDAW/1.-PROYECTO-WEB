@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONFIRMACIÓN RESERVA</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+    <header class="navegador">
+        <div>
+            <img src="Logo.png" alt="Logo" class="logo">
+            <h3 style="font-family: 'Elephant', serif;">VAYVEN TRAVEL</h3>
+        
+        <nav>
+                <b><ul style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                    <li><a href="index.html" class="active">INICIO</a></li>
+                    <li><a href="ofertas.html">OFERTAS</a></li>
+                    
+                    <li class="desplegable">
+                        <a href="viajes.html">VIAJES</a>
+                        <ul class="menu-desplegable">
+                            <li><a href="españa.html">España</a></li>
+                            <li><a href="europa.html">Europa</a></li>
+                            <li><a href="internacionales.html">Grandes Viajes</a></li>                
+                        </ul>
+
+                    </li>
+
+                    <li><a href="hoteles.html">HOTELES</a></li>
+                    <li><a href="vuelos.html">VUELOS</a></li>
+                    <li class="desplegable">
+                        <a href="masproductos.html">MÁS PRODUCTOS</a>
+                        <ul class="menu-desplegable">
+                            <li><a href="musicales.html">Musicales</a></li>
+                            <li><a href="parques.html">Parques Temáticos</a></li>
+                            <li><a href="seguros.html">Seguros de Viaje</a></li>
+                            <li><a href="reclamaciones.html">Reclamaciones</a></li>             
+                        </ul>
+                    </li>
+                </ul></b>
+                </div>
+            </nav>
+    </header>
+
+
+<!--RECLAMACIONES-->
+<div class="fondo7">
+    <div class="formulario" style="font-family: Arial, Helvetica, sans-serif;">
+        <form id="formReclamacion">
+            <h2 style="font-family: Arial, Helvetica, sans-serif; text-align: center;">FORMULARIO DE RECLAMACIÓN</h2>
+
+            <fieldset>
+                <legend><b>DATOS PERSONALES</b></legend>
+                <div class="fila">
+                    <div>
+                        <label>Nombre:</label>
+                        <input type="text" placeholder="Tu nombre" class="input-estilo" requiredpattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]{2,50}">
+                    </div>
+                    <div>
+                        <label>Apellidos:</label>
+                        <input type="text" placeholder="Tus apellidos" class="input-estilo" required pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]{2,80}">
+                    </div>
+                </div>
+                <div class="campo">
+                    <label>DNI/NIE:</label>
+                    <input type="text"  placeholder="00000000X" 
+                    class="input-estilo" required pattern="[0-9]{8}[A-Za-z]{1}">
+                </div>
+                <div class="campo">
+                    <label>Email:</label>
+                    <input type="email" 
+                        placeholder="tucorreo@email.com" 
+                        class="input-estilo"
+                        required
+                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                </div>
+                <div class="campo">
+                    <label>Teléfono:</label>
+                    <input type="tel" placeholder="+34 600 000 000" class="input-estilo" required pattern="(\+34|0034)?[6789][0-9]{8}">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend><b>DETALLES DE LA RECLAMACIÓN</b></legend>
+                <div class="campo">
+                    <label>Número de reserva:</label>
+                    <input type="text" placeholder="Ej: RES-12345" 
+                    class="input-estilo" required pattern="RES-[0-9]{5}">
+                </div>
+                <div class="campo">
+                    <label>Tipo de reclamación:</label>
+                    <select class="input-estilo" required title="Selecciona el tipo de reclamación">
+                        <option value="">-- Selecciona el tipo --</option>
+                        <option value="vuelo">Vuelo</option>
+                        <option value="hotel">Hotel</option>
+                        <option value="seguro">Seguro de viaje</option>
+                        <option value="parque">Parque temático</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="fila">
+                    <div>
+                        <label>Fecha del incidente:</label>
+                        <input type="date" class="input-estilo"
+                        required>
+                    </div>
+                    <div>
+                        <label>Fecha de la reserva:</label>
+                        <input type="date" 
+                        class="input-estilo" required>
+                    </div>
+                </div>
+                <div class="campo">
+                    <label>Descripción de la reclamación:</label>
+                    <textarea 
+                        class="input-estilo" 
+                        rows="5" 
+                        placeholder="Describe detalladamente tu reclamación, mínimo 20 caracteres..."
+                        required></textarea>
+                </div>
+            </fieldset>
+
+            <div class="botones-form">
+                    <button type="submit" class="reserva"><a href="guardar-reclamación.html" class="reserva">ENVIAR RECLAMACIÓN</a></button>
+                <button type="reset" class="limpiar">LIMPIAR</button>
+            </div>
+        </form>
+    </div>
+</div>
+    
+
+    <footer>
+    <div class="final" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+        <div class="columna columna-conocenos">
+            <h3>CONOCENOS</h3>
+            <p>Diseñamos viajes a tu medida para convertirlos en recuerdos inolvidables.</p><p> Expertos en conectar tus sueños con los mejores destinos.
+        </div></p>
+
+        <div class="columna columna-logo">
+            <img src="Logo.png" alt="logo" class="logo-final">
+            <b><p class="titulo-agencia">AGENCIA DE VIAJES</p></b>
+        </div>
+
+        <div class="columna columna-telefono">
+            <h3>TELÉFONO</h3>
+            <p>+34 931 234 674</p>
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>

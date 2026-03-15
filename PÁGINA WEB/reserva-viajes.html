@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONFIRMACIÓN RESERVA</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+    <header class="navegador">
+        <div>
+            <img src="Logo.png" alt="Logo" class="logo">
+            <h3 style="font-family: 'Elephant', serif;">VAYVEN TRAVEL</h3>
+        
+        <nav>
+                <b><ul style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                    <li><a href="index.html" class="active">INICIO</a></li>
+                    <li><a href="ofertas.html">OFERTAS</a></li>
+                    
+                    <li class="desplegable">
+                        <a href="viajes.html">VIAJES</a>
+                        <ul class="menu-desplegable">
+                            <li><a href="españa.html">España</a></li>
+                            <li><a href="europa.html">Europa</a></li>
+                            <li><a href="internacionales.html">Grandes Viajes</a></li>                
+                        </ul>
+
+                    </li>
+
+                    <li><a href="hoteles.html">HOTELES</a></li>
+                    <li><a href="vuelos.html">VUELOS</a></li>
+                    <li class="desplegable">
+                        <a href="masproductos.html">MÁS PRODUCTOS</a>
+                        <ul class="menu-desplegable">
+                            <li><a href="musicales.html">Musicales</a></li>
+                            <li><a href="parques.html">Parques Temáticos</a></li>
+                            <li><a href="seguros.html">Seguros de Viaje</a></li>
+                            <li><a href="reclamaciones.html">Reclamaciones</a></li>             
+                        </ul>
+                    </li>
+                </ul></b>
+                </div>
+            </nav>
+    </header>
+
+
+
+<!--FORMULARIO RESERVA-->
+    <div class="fondo8">
+    <div class="formulario" style=" font-family: Arial, Helvetica, sans-serif;">
+        <form>
+            <h2 class="texto" style=" font-family: Arial, Helvetica, sans-serif;">RESERVA TU VIAJE</h2>
+
+            <fieldset class="texto">
+                <legend><b>DATOS PERSONALES</b></legend>
+
+                <div class="fila">
+                    <div>
+                        <label>Nombre:</label>
+                        <input type="text" placeholder="Tu nombre" class="input-estilo" pattern="[a-zA-Z ]+" required>
+                    </div>
+                    <div>
+                        <label>Apellidos:</label>
+                        <input type="text" placeholder="Tus apellidos" class="input-estilo" pattern="[a-zA-Z ]+" required>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label>DNI/NIE:</label>
+                    <input type="text" placeholder="00000000X" class="input-estilo" pattern="[0-9]{8}[A-Z]" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend><b>DETALLES DEL VIAJE</b></legend>
+
+                <div class="fila">
+                    <div>
+                        <label>Fecha de ida:</label>
+                        <input type="date" class="input-estilo" required>
+                    </div>
+                    <div>
+                        <label>Fecha de vuelta:</label>
+                        <input type="date" class="input-estilo" required>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label>Origen:</label>
+                    <select class="input-estilo">
+                        <option value="">-- Selecciona un destino --</option>
+                        <option value="sevilla">Sevilla</option>
+                        <option value="barcelona">Barcelona</option>
+                        <option value="asturias">Asturias</option>
+                        <option value="italia">Italia</option>
+                        <option value="londres">Londres</option>
+                        <option value="amsterdam">Amsterdam</option>
+                        <option value="egipto">Egipto</option>
+                        <option value="japon">Japón</option>
+                        <option value="maldivas">Maldivas</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label>Destino:</label>
+                    <select class="input-estilo">
+                        <option value="">-- Selecciona un destino --</option>
+                        <option value="sevilla">Sevilla</option>
+                        <option value="barcelona">Barcelona</option>
+                        <option value="asturias">Asturias</option>
+                        <option value="italia">Italia</option>
+                        <option value="londres">Londres</option>
+                        <option value="amsterdam">Amsterdam</option>
+                        <option value="egipto">Egipto</option>
+                        <option value="japon">Japón</option>
+                        <option value="maldivas">Maldivas</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label><b>Tipo de Transporte:</b></label>
+                    <br>
+                    <input type="radio" name="transporte" value="avión" required>Avión
+                    <br>
+                    <input type="radio" name="transporte" value="tren" required>Tren
+                    <br>
+                    <input type="radio" name="transporte" value="bus" required>Autobus
+                </div>
+
+                <div class="campo">
+                    <label><b>Clase:</b></label>
+                    <br>
+                    <input type="radio" name="clase" required>Turista
+                    <br>
+                    <input type="radio" name="clase" required>Turista Premium
+                    <br>
+                    <input type="radio" name="clase" required>Primera
+                    <br>
+                    <input type="radio" name="clase" required>Business
+                </div>
+
+
+                <div class="campo">
+                    <label>Billetes:</label>
+                    <select class="input-estilo">
+                        <option value="">-- Selecciona cuantas personas</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="reserva"><a href="guardar-viajes.html" class="reserva">RESERVAR</a></button>
+        </form>
+    </div>
+</div>
+    
+
+    <footer>
+    <div class="final" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+        <div class="columna columna-conocenos">
+            <h3>CONOCENOS</h3>
+            <p>Diseñamos viajes a tu medida para convertirlos en recuerdos inolvidables.</p><p> Expertos en conectar tus sueños con los mejores destinos.
+        </div></p>
+
+        <div class="columna columna-logo">
+            <img src="Logo.png" alt="logo" class="logo-final">
+            <b><p class="titulo-agencia">AGENCIA DE VIAJES</p></b>
+        </div>
+
+        <div class="columna columna-telefono">
+            <h3>TELÉFONO</h3>
+            <p>+34 931 234 674</p>
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>
