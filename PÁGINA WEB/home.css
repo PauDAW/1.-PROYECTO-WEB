@@ -25,6 +25,7 @@ body
     list-style: none;
     align-items: center;
     justify-content: space-between;
+    box-sizing: border-box;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(66, 65, 65, 0.4);
 }
@@ -847,8 +848,19 @@ legend
 /*Ñ. MÁS PRODUCTOS*/
 .titulo-con-boton 
 {
-        flex-direction: column;
-        gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.titulo-con-boton .azul
+{
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    width: auto;
+    display: inline-block;
 }
 
 /*M. RESERVA VIAJES*/
@@ -871,6 +883,18 @@ legend
 
 @media (max-width: 700px) 
 {
+
+    /*GENERAL EN EL MOVIL*/
+    body
+    {
+        overflow-x: hidden;
+    }
+
+    .contenido, .ofertas, .hoteles, .destacados-seccion
+    {
+        padding: 20px 15px;
+    }
+
     /* NAVEGACIÓN */
     .navegador > div 
     {
@@ -879,8 +903,10 @@ legend
         padding: 10px 15px;
         align-items: center;
         justify-content: center;
+        margin: 5px;
+        width: 100%;
     }
-
+    
     nav 
     {
         margin-left: 0;
@@ -978,14 +1004,18 @@ legend
     /* FORMULARIO RESERVA */
     .fondo, .fondo2, .fondo3, .fondo4, .fondo5, .fondo6, .fondo7, .fondo8
     {
-        padding: 20px 10px;
+        padding: 30px 0;
+        justify-content: center;
+        align-items: center;
     }
 
     .formulario 
     {
         width: 90%;
+        max-width: 90%;
         padding: 20px 15px;
         box-sizing: border-box;
+        margin: 0 auto;
     }
 
     .fila 
@@ -1000,6 +1030,8 @@ legend
         flex-direction: column;
         align-items: center;
         text-align: center;
+        margin: 10px 5px;
+        border-radius: 10px;
     }
 
     .columna 
@@ -1066,6 +1098,15 @@ legend
     {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .titulo-con-boton .ciudad-titulo
+    {
+        display: block;
+        border-bottom: none;
+        margin: 0;
+        padding: 0;
+        font-size: 1.2rem;
     }
 
     /* VIAJES*/

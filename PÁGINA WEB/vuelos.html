@@ -49,7 +49,7 @@
     <!---FORMULARIO VUELOS--->
     <div class="fondo3">
     <div class="formulario" style=" font-family: Arial, Helvetica, sans-serif;">
-        <form>
+        <form action="reserva-vuelos.html">
             <h2 class="texto" style=" font-family: Arial, Helvetica, sans-serif;">RESERVA TU VUELO</h2>
 
             <fieldset class="texto">
@@ -58,17 +58,17 @@
                 <div class="fila">
                     <div>
                         <label>Nombre:</label>
-                        <input type="text" placeholder="Tu nombre" class="input-estilo" pattern="[a-zA-Z ]+" required>
+                        <input type="text" placeholder="Tu nombre" class="input-estilo" pattern="[a-zA-Z ]+" required title="No puede llevar numeros">
                     </div>
                     <div>
                         <label>Apellidos:</label>
-                        <input type="text" placeholder="Tus apellidos" class="input-estilo" pattern="[a-zA-Z ]+" required>
+                        <input type="text" placeholder="Tus apellidos" class="input-estilo" pattern="[a-zA-Z ]+" required title="No puede llevar numeros">
                     </div>
                 </div>
 
                 <div class="campo">
                     <label>DNI/NIE:</label>
-                    <input type="text" placeholder="00000000X" class="input-estilo" pattern="[0-9]{8}[A-Z]" required>
+                    <input type="text" placeholder="00000000X" class="input-estilo" pattern="[0-9]{8}[A-Z]" required title="8 números y una letra mayúscula">
                 </div>
             </fieldset>
 
@@ -143,8 +143,6 @@
                     </select>
                 </div>
 
-    
-                
                 <div class="campo">
                     <label><b>Clase:</b></label>
                     <br>
@@ -157,11 +155,9 @@
                     <input type="radio" name="clase" value="business" required>Business
                 </div>
 
-
-
             </fieldset>
 
-            <button type="submit" class="reserva"><a href="reserva-vuelos.html" class="reserva">RESERVAR</a></button>
+            <button type="submit" class="reserva">RESERVAR</button>
         </form>
     </div>
 </div>

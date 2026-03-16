@@ -49,7 +49,7 @@
     <!--FORMULARIO RESERVA DE HOTELES-->
     <div class="fondo2">
     <div class="formulario" style=" font-family: Arial, Helvetica, sans-serif;">
-        <form>
+        <form action="reserva-hoteles.html">
             <h2 class="texto" style=" font-family: Arial, Helvetica, sans-serif;">RESERVA TU HOTEL</h2>
 
             <fieldset class="texto">
@@ -58,17 +58,17 @@
                 <div class="fila">
                     <div>
                         <label>Nombre:</label>
-                        <input type="text" placeholder="Tu nombre" class="input-estilo" required pattern="[a-zA-Z ]+">
+                        <input type="text" placeholder="Tu nombre" class="input-estilo" pattern="[a-zA-Z ]+" title="No puede llevar numeros" required>
                     </div>
                     <div>
                         <label>Apellidos:</label>
-                        <input type="text" placeholder="Tus apellidos" class="input-estilo" required pattern="[a-zA-Z ]+">
+                        <input type="text" placeholder="Tus apellidos" class="input-estilo" required pattern="[a-zA-Z ]+" title="No puede llevar numeros">
                     </div>
                 </div>
 
                 <div class="campo">
                     <label>DNI/NIE:</label>
-                    <input type="text" placeholder="00000000X" class="input-estilo" required pattern="[0-9]{8}[A-Z]">
+                    <input type="text" placeholder="00000000X" class="input-estilo" required pattern="[0-9]{8}[A-Z]" title="8 números y una letra mayúscula">
                 </div>
             </fieldset>
 
@@ -130,15 +130,15 @@
                 <div class="campo">
                     <label><b>Servicios adicionales:</b></label>
                     <br>
-                    <input type="checkbox" name="servicios" required> Desayuno Incluido
+                    <input type="checkbox" name="servicios"> Desayuno Incluido
                     <br>
-                    <input type="checkbox" name="servicios" required> Todo Incluido
+                    <input type="checkbox" name="servicios"> Todo Incluido
                     <br>
-                    <input type="checkbox" name="servicios" required>Nada Incluido
+                    <input type="checkbox" name="servicios" required>Decidir más adelante
                 </div>
             </fieldset>
 
-            <button type="submit" class="reserva"><a href="info-hoteles.html" class="reserva">RESERVAR</a></button>
+            <button type="submit" class="reserva">RESERVA</button>
         </form>
     </div>
 </div>
