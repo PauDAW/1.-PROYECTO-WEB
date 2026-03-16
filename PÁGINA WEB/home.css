@@ -112,7 +112,7 @@ nav a:hover, nav a.active
 .carrusel
 {
     max-width: 1500px;
-    width: auto;
+    width: 98%;
     height: 400px;
     overflow: hidden;
     border-radius: 15px;
